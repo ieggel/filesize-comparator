@@ -15,6 +15,6 @@ do
   size2=$(ls -l "$dir2/$filename" | awk '{ print $5 }')
   if [[ ! $size1 -eq $size2 ]]
     then
-      echo "${filename}: ${size1} ${size2}"
+      echo "${filename}    ${size1}    ${size2}"
   fi
 done
